@@ -1,0 +1,119 @@
+/*
+File: pacific.css
+
+GUI Assignment 2: Style a Site with External CSS
+
+Name: John Wesley Agojo, UMass Lowell CS, johnwesley_agojo@student.uml.edu
+Copyright (c) 2025 by John Wesley Agojo. All rights reserved.
+May be freely copied or excerpted for educational purposes with credit to the author.
+Created on Sep 10, 2025
+
+Short description:
+This file contains most of the styling needed for the html file. 
+**/
+
+
+html, body {
+	min-height: 100%;
+}
+body {
+	background-image: url(ptrbackground.jpg);
+	background-repeat: repeat-x;
+	background-position: top;
+	background-color: #00569f;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	grid-area: header;
+	background-color: #000033;
+	background-image: url(sunset.jpg);
+	background-repeat: no-repeat;
+	background-position: center right;
+	padding: 0;
+}
+
+#wrapper {
+	background-color: white;
+	width: 80%;
+	min-width: 600px;
+	margin: 0 auto;
+	padding: 0 auto;
+	margin-top: 20px;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	grid-template-columns: 200px 1fr;
+	grid-template-areas:
+		"header header"
+		"nav content"
+		"nav footer";
+}
+
+#content img{
+	float: left;
+	max-width: 50%;
+	height: auto;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+footer {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	grid-area: footer;
+	padding: 25px;
+	font-size: .75em;
+	font-style: italic;
+}
+.resort h1 {
+	color: A#0070a8;
+	font-weight: bold;
+}
+
+nav {
+	grid-area: nav;
+	background-color: #8dc6e4;
+}
+
+nav ul {
+	font-size: 1.2em;
+	padding: 0;
+	list-style-type: none;
+}
+#content li {
+	list-style-image: url(marker.gif);
+}
+nav a {
+	text-decoration: none;
+	font-size: 1.25em;
+	font-weight: bold;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	color: black;
+	padding: 15px;
+}
+nav a:visited {
+	color: #344873;
+}
+nav a:hover {
+	color: #FFFFFF;
+}
+h1 {
+	margin: 0;
+	padding: 10px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	color: white;
+}
+h2 {
+	color: #3399CC;
+}
+h1,
+h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+#contact {
+	font-size: 90%;
+}
+dt {
+	color: #000033;
+}
+
