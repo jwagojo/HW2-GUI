@@ -65,9 +65,10 @@ footer {
 	font-size: .75em;
 	font-style: italic;
 }
-.resort h1 {
-	color: A#0070a8;
+.resort {
+	color: #0070a8;
 	font-weight: bold;
+	font-size: large;
 }
 
 nav {
@@ -115,5 +116,8 @@ h2 {
 }
 dt {
 	color: #000033;
+}
+#content {
+	font-family:Arial, Helvetica, sans-serif
 }
 
